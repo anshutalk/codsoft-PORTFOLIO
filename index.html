@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<h3 lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anshuman Singh - Web Devloper- student</title>
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+
+    <script>
+        function myFunction() {
+            alert("Your Message has been Submitted!");
+        }
+    </script>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h1><span>My</span> Portfolio</h1>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p> A Student,Web Developer</p>
+                    <h1>Hi,I'm <span>Anshuman</span> <br> Singh </h1>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="services">
+            <div class="sec-middle-container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>I'm a developer, so I know how to create your website to run across devices using the latest
+                            technologies available...</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>App Development</h2>
+                        <p>I can build the Androis/ios device applications smoothly with latest versions</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h2>Software Development</h2>
+                        <p>I love to code and familiar with latest Programming language and can let your job done
+                            efficiently..</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1> <br>
+                        <p style="font-size: small;"><i class="fas fa-paper-plane"></i>anshuman3195@gmail.com</p>
+                        <br>
+                        <p><i class="fas fa-phone-square-alt"></i>+919628831832</p> <br>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+
+                        </div>
+                        
+
+                        <a href="#" class="btn btn2">Download Resume <i class="fa-solid fa-download"></i></a>
+                        
+                        
+                    </div>
+                    <div class="contact-right"></div>
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" onclick="myFunction()" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright &#169; Anshuman Singh. Made with <i class="fas fa-heart"></i> 2023 All rights reserved </p>
+            </div>
+        </div>
+
+
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+            
+        </script>
+         <script src="https://kit.fontawesome.com/462f495e04.js" crossorigin="anonymous"></script>
+    </body>
+
+    </html>
